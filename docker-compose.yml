@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  pylucene:
+    image: 4teamwork/pylucene:3.6.2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./data:/data
